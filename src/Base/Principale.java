@@ -1,13 +1,15 @@
-
+package Base;
 public class Principale {
 
+	public int x;
+	
 	public static void main(String[] args) {
 		Archivio a = new Archivio(10);
-	    
+			
 		Persona p;
-				
+    	
 	    p=new Persona("Roberto", "Spotti", 53, 'm');
-		
+			
 		a.aggiungiPersona(p);
 		
 		p=new Persona("Paolino", "Paperino",100,'m');
@@ -18,10 +20,10 @@ public class Principale {
 		
 		p=a.cerca("Paperino");
 	
-		System.out.println(p.nome);
-		System.out.println(p.cognome);
-		System.out.println(p.eta);
-		System.out.println(p.sesso);
+		System.out.println(p.getNome());
+		System.out.println(p.getCognome());
+		System.out.println(p.getEta());
+		System.out.println(p.getSesso());
 		
 
 	}

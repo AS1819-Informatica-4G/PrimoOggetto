@@ -1,3 +1,4 @@
+package Base;
 
 public class Archivio {
 	private int indice=0;
@@ -17,7 +18,7 @@ public class Archivio {
 	
 	public Persona cerca(String cognome) {
 		for (Persona p: listaPersone ) {
-			if ( cognome.equals(p.cognome) ) {
+			if ( cognome.equals(p.getCognome()) ) {
 				return p;
 			}
 		}
